@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="input-container">
+            <h1> Hangman : A multiplayer game</h1>
+            <label for="word-input">Word:</label>
+            <input type="text" id="word-input">
+            <label for="hint-input">Hint:</label>
+            <input type="text" id="hint-input">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="game-container" class="hidden">
+            <div class="main">
+                <div class="man">
+                    <img class="manimg" src="stand.png">
+                </div>
+                <div class="guess">
+                    <div id="hint" class="hint"></div>
+                    <div id="word-container"></div>
+                </div>
+                <div class="words"></div>
+            </div>
+        </div>
+        <div id="end-container" class="hidden">
+            <div class="status"> You Won</div>
+            <button onclick="window.location.reload()" class="btn">Play again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
